@@ -1,0 +1,131 @@
+{
+    "header": {
+        "buttons": {
+            "play": "Play",
+            "forum": "Forum",
+            "discord": "Discord",
+            "info": "About"
+        },
+        "payment": "Donate"
+    },
+    "start": {
+        "label": "The entire life <br /> of your gang.",
+        "description": "Immerse yourself in a world of limitless possibilities. Create your story in a detailed metropolis.",
+        "online-players": "players online",
+        "buttons": {
+            "start": "Start Playing",
+            "more": "Learn More"
+        },
+        "slide-down": "Scroll Down"
+    },
+    "features": {
+        "badge": "Features",
+        "label1": "Our",
+        "label2": "Uniqueness",
+        "description": "Immerse yourself in a world crafted with care for every detail",
+
+        "list": {
+            "1": {
+                "accentTitle": "CREATE YOUR",
+                "mainTitle": "CHARACTER",
+                "description": "Detailed appearance customization and a wide selection of clothing will open up opportunities for self-expression."
+            },
+            "2": {
+                "accentTitle": "VEHICLES",
+                "mainTitle": "FOR EVERY TASTE",
+                "description": "From 'combat classics' and foreign cars to helicopters and yachts — build your vehicle collection in the garage."
+            },
+            "3": {
+                "accentTitle": "LIVING",
+                "mainTitle": "GAME WORLD",
+                "description": "Seasonal events, in-game quests, and regular activities will make the game even more immersive."
+            }
+        }
+    },
+    "how-to-play": {
+        "label": "Just 2 Simple Steps",
+        "description1": "How to Start",
+        "description2": "Playing",
+
+        "steps": {
+            "buy": {
+                "title": "Purchase Grand Theft Auto V",
+                "description": "A licensed version from any store is suitable (Steam, Rockstar Launcher, Epic Games Launcher)",
+                "button": "Buy"
+            },
+            "multiplayer": {
+                "title": "Download the RAGE Launcher",
+                "description": "The fastest and most convenient way to start playing. The launcher will automatically install and verify the necessary files and fix many common errors.",
+                "button": "Download"
+            },
+            "connect": {
+                "title": "Connect Directly",
+                "description": "Simply copy the server IP address and connect through the RAGEMP multiplayer. Start playing in just a few minutes.",
+                "button": "Copy IP Address"
+            }
+        },
+        
+        "questions": {
+            "text1": "Have questions",
+            "text2": "or issues?",
+            "button": "Contact Support"
+        }
+    },
+    "FAQ": {
+        "label1": "Answers to",
+        "label2": "Frequently Asked Questions",
+        "questions": {
+            "1": {
+                "title": "What is Roleplay?",
+                "answer": "It's a game mode where participants create characters and scenarios, then act according to their roles within the game's processes."
+            },
+            "2": {
+                "title": "Is a licensed copy of GTA 5 required?",
+                "answer": "Yes, it is. You can only connect to the server with a licensed copy."
+            },
+            "3": {
+                "title": "What are the minimum PC requirements for the game?",
+                "answer": "CPU from i5, 8 GB RAM, video card from 2 GB, and an SSD drive. However, the more powerful the PC, the more stable the FPS and graphics."
+            },
+            "4": {
+                "title": "What happens if rules are violated?",
+                "answer": "It depends on the situation: a warning, a mute, or a ban. We strive to maintain the RP mode."
+            },
+            "5": {
+                "title": "Can I play without a microphone?",
+                "answer": "Technically - yes. But almost everywhere preference will be given to players with voice."
+            },
+            "6": {
+                "title": "How many districts of Moscow will be in the game?",
+                "answer": "At the project's launch, 11 districts will be available to players."
+            }
+        }
+    },
+    "socials": {
+        "label": "Even More Content",
+        "description": "Be the first to learn about promotions and news",
+        "media-question": "Want to become a media partner?",
+        "media-button": "Contact Us!"
+    },
+    "footer": {
+        "players": {
+            "label": "For Players",
+            "play": "Start Playing",
+            "payment": "Account Top-Up",
+            "forum": "Forum",
+            "info": "About the Project"
+        },
+        "information": {
+            "label": "Important Information",
+            "terms": "Terms of Use",
+            "user-agreement": "User Agreement",
+            "payment": "Payment Rules"
+        },
+        "contacts": {
+            "label": "Contacts",
+            "discord-support": "Support Channel in Discord",
+            "telegram-support": "Support Bot in Telegram"
+        },
+        "disclaimer": "This project is not affiliated with, endorsed by, or associated with Take-Two Interactive Software, Inc., Rockstar Games, Inc. or any of their owners. All trademarks and registered trademarks are the property of their respective owners."
+    }
+}
