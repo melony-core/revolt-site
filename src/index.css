@@ -153,3 +153,30 @@ input::-webkit-outer-spin-button {
     transform: translateY(0);
   }
 }
+
+.online-preloader::before {
+  content: '';
+  
+  position: absolute;
+  width: 30px;
+  height: 100%;
+
+  left: 0;
+  top: 0;
+
+  background: rgba(255, 255, 255, .1);
+  filter: blur(15px);
+
+  transition: opacity .2s;
+  animation: load-default 1s infinite;
+}
+
+@keyframes load-default {
+  from {
+    left: -50px;
+  }
+
+  to {
+    left: calc(100% + 50px);
+  }
+}

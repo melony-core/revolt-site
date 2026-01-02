@@ -12,8 +12,10 @@ export function StartPage() {
                 const result = await rage.getServerStats("redwood.gta5rp.com:22005");
                 if (!result) return;
 
-                setOnline(result.players)
+                setOnline(result.players);
+                localStorage.setItem('online', result.players.toString());
             } catch (error) {
+                setOnline(Number(localStorage.getItem('online')))
                 console.error("Ошибка: ", error);
             }
         })();
@@ -31,8 +33,14 @@ export function StartPage() {
                             <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500" />
                         </span>
 
-                        <span className="text-sm text-muted-foreground">
-                            <span className="text-foreground font-medium"><NumberFlow plugins={[continuous]} format={{ notation: "standard" }} value={online} /></span> {$t('start.online-players')}
+                        <span className="w-fit items-center flex gap-[4px] text-sm text-muted-foreground">
+                            <span className={`relative ${online > 0 ? "w-fit" : "w-[40px]"} ${online > 0 ? "text-foreground" : "text-[#fff0]"} font-medium`}>
+                                <div className={`absolute w-full h-full online-preloader overflow-hidden rounded-[3px] bg-[#ffffff06] ${online > 0 ? "opacity-0" : "opacity-100"} transition-all duration-300`}>
+                                    
+                                </div>
+                                <NumberFlow plugins={[continuous]} format={{ notation: "standard" }} value={online} />
+                            </span> 
+                            {$t('start.online-players')}
                         </span>
                     </div>
                 </div>

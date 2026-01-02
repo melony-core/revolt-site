@@ -14,7 +14,7 @@ i18n.use(initReactI18next).init({
   resources: translations,
   fallbackLng: 'en',
   interpolation: {
-      escapeValue: false
+    escapeValue: false
   }
 });
 

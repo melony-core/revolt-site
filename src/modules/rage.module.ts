@@ -10,7 +10,7 @@ export interface IRageServerState {
 
 class RAGE {
     async getServerStats(serverIp: string): Promise<IRageServerState | null> {
-        var response = await fetch('https://cdn.rage.mp/master/');
+        const response = await fetch('https://cdn.rage.mp/master/');
 
         if (!response.ok) {
             throw new Error(`Error to get online (${serverIp}: ${response.status})`);
