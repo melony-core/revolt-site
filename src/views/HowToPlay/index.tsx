@@ -7,14 +7,11 @@ export function HowToPlay() {
     const sectionRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                if (entry.isIntersecting) {
-                setIsVisible(true);
-                }
-            },
-            { threshold: 0.1 }
-        );
+        const observer = new IntersectionObserver(([entry]) => {
+            if (entry.isIntersecting) {
+            setIsVisible(true);
+            }
+        }, { threshold: 0.1 });
 
         if (sectionRef.current) {
             observer.observe(sectionRef.current);

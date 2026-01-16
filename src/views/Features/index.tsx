@@ -24,9 +24,9 @@ export function Features() {
     useEffect(() => {
         const observer = new IntersectionObserver(([entry]) => {
             if (entry.isIntersecting) {
-            setIsVisible(true);
+                setIsVisible(true);
             }
-        }, { threshold: 0.1 } );
+        }, { threshold: 0.1 });
 
         if (sectionRef.current) {
             observer.observe(sectionRef.current);

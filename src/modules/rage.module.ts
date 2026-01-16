@@ -9,6 +9,11 @@ export interface IRageServerState {
 }
 
 class RAGE {
+    /**
+     * Функция для получения данных о сервер (RAGE)
+     * @param serverIp - Полный айпи сервера
+     * @returns - Объект с данными сервера или null
+     */
     async getServerStats(serverIp: string): Promise<IRageServerState | null> {
         const response = await fetch('https://cdn.rage.mp/master/');
 

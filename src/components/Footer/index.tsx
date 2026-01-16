@@ -51,12 +51,6 @@ export function Footer() {
                         <div className="px-4 py-2 bg-card border border-border rounded-lg text-sm font-bold">
                             VISA
                         </div>
-                        {/* <div className="px-4 py-2 bg-card border border-border rounded-lg text-sm font-bold">
-                            МИР
-                        </div>
-                        <div className="px-4 py-2 bg-card border border-border rounded-lg text-sm font-bold text-muted-foreground">
-                            СБП
-                        </div> */}
                     </div>
                 </div>
 

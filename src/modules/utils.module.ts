@@ -1,3 +1,8 @@
+
+/**
+ * Функция для копирования текста
+ * @param text - Текст для копирования
+ */
 export const copyText = (text: string) => {
     const textarea = document.createElement('textarea');
     
@@ -8,7 +13,8 @@ export const copyText = (text: string) => {
     
     try {
         document.execCommand('copy');
-    } catch (err) {
+    } catch (e) {
+        console.log(`Ошибка копирования: ${e}`);
     } finally {
         document.body.removeChild(textarea);
     }

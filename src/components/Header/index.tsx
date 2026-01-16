@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react";
 import { $t } from "../../modules";
 import ILogo from "../../assets/pictures/logo.svg";
 
-const languages = [
+const languages: { code: string; label: string; flag: string; }[] = [
   { code: "ru", label: "Русский", flag: "🇷🇺" },
   { code: "en", label: "English", flag: "🇺🇸" },
   { code: "de", label: "Deutsch", flag: "🇩🇪" },
@@ -13,6 +13,13 @@ const languages = [
 export function Header() {
     const [scrolled, setScrolled] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+    const homeButton = () => {
+        scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
 
     useEffect(() => {
         const handleScroll = () => {
@@ -28,13 +35,6 @@ export function Header() {
             setMobileMenuOpen(false);
         }
     }, [scrolled]);
-
-    const homeButton = () => {
-        scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    }
     
     return (
         <header id="header" className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled || mobileMenuOpen ? "py-5 bg-background/95 backdrop-blur-lg border-b border-border" : "py-5 border-b-[#fff0] bg-transparent" }`}>

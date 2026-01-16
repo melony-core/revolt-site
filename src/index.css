@@ -49,6 +49,7 @@
     background-color: hsl(var(--background));
     color: hsl(var(--foreground));
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     user-select: none;
@@ -151,32 +152,5 @@ input::-webkit-outer-spin-button {
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-.online-preloader::before {
-  content: '';
-  
-  position: absolute;
-  width: 30px;
-  height: 100%;
-
-  left: 0;
-  top: 0;
-
-  background: rgba(255, 255, 255, .1);
-  filter: blur(15px);
-
-  transition: opacity .2s;
-  animation: load-default 1s infinite;
-}
-
-@keyframes load-default {
-  from {
-    left: -50px;
-  }
-
-  to {
-    left: calc(100% + 50px);
   }
 }
